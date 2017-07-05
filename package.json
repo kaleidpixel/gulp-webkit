@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "name": "gulp-webkit-by-kaleidpixel",
+  "version": "1.0.0",
+  "description": "Gulp tasks using the Foundation for sites.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaleidpixel/gulp-webkit"
+  },
+  "author": "Kaleid Pixel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaleidpixel/gulp-webkit/issues"
+  },
+  "homepage": "https://github.com/kaleidpixel/gulp-webkit#readme",
+  "scripts": {
+    "bower": "./node_modules/.bin/bower",
+    "gulp": "./node_modules/.bin/gulp",
+    "install": "npm install --save-dev",
+    "uninstall": "npm uninstall --save-dev",
+    "update": "./node_modules/.bin/npm-check-updates -u && npm install",
+    "list": "npm ls --depth=0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^3.1.0",
+    "gulp-data": "^1.2.1",
+    "gulp-filter": "^5.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-pug-inheritance": "^0.2.1",
+    "gulp-watch": "^4.3.11",
+    "npm-check-updates": "^2.12.1",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.0.0"
+  }
+}

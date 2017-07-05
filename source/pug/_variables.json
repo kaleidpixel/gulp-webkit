@@ -1,0 +1,16 @@
+{
+    "assets": {
+        "css": "assets/css",
+        "font": "assets/css/font",
+        "img": "assets/img",
+        "js": "assets/js"
+    },
+    "pages": {
+        "index": {
+            "url": "index.html",
+            "title": "Hello World!",
+            "description": "A \"Hello, World!\" program is a computer program that outputs or displays \"Hello, World!\" to a user.",
+            "image": "ogp.jpg"
+        }
+    }
+}
