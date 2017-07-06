@@ -30,7 +30,11 @@ global.gulp.task('scss', function () {
             },
             mqpacker    : true
         })))
-        .pipe(global.$.sourcemaps.write('./'))
+        .pipe(global.$.sourcemaps.write('./', {
+            mapFile: function(mapFilePath) {
+                return mapFilePath.replace('.css.map', '.map');
+            }
+        }))
         .pipe(global.gulp.dest(global.destPath + '/css'));
 });
 
