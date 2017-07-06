@@ -3,7 +3,7 @@
 const global = require('../global.js');
 
 global.gulp.task('pug', function () {
-    return global.gulp.src([global.srcPath + '/pug/**/*.pug', global.srcPath + '/pug/_variables.json'])
+    return global.gulp.src(global.srcPath + '/pug/**/*.pug')
         .pipe(global.$.plumber())
         //.pipe(global.$.if(global.isWatching, global.$.changed(global.publicPath, {
         //    extension: '.html'

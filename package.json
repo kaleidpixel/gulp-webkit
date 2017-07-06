@@ -14,23 +14,28 @@
   },
   "homepage": "https://github.com/kaleidpixel/gulp-webkit#readme",
   "scripts": {
-    "bower": "./node_modules/.bin/bower",
-    "gulp": "./node_modules/.bin/gulp",
-    "install": "npm install --save-dev",
-    "uninstall": "npm uninstall --save-dev",
-    "update": "./node_modules/.bin/npm-check-updates -u && npm install",
-    "list": "npm ls --depth=0"
+    "bw": "./node_modules/.bin/bower",
+    "gl": "./node_modules/.bin/gulp",
+    "ist": "npm install --save-dev",
+    "uist": "npm uninstall --save-dev",
+    "up": "./node_modules/.bin/ncu -u && npm install",
+    "ls": "npm ls --depth=0"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.18.12",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^3.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cr-lf-replace": "0.0.4",
     "gulp-data": "^1.2.1",
     "gulp-filter": "^5.0.0",
     "gulp-if": "^2.0.2",
     "gulp-load-plugins": "^1.5.0",
+    "gulp-order": "^1.1.1",
     "gulp-pleeease": "^2.0.2",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.3.0",
@@ -39,9 +44,13 @@
     "gulp-sass": "^3.1.0",
     "gulp-sass-inheritance": "^1.1.0",
     "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.11",
+    "jquery": "^3.2.1",
+    "minimatch": "^3.0.4",
     "npm-check-updates": "^2.12.1",
     "require-dir": "^0.3.2",
-    "run-sequence": "^2.0.0"
+    "run-sequence": "^2.0.0",
+    "uglify-save-license": "^0.4.1"
   }
 }

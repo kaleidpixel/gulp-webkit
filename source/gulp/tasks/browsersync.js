@@ -12,7 +12,7 @@ global.gulp.task('browserSync', function () {
             baseDir: global.publicPath
         },
         files: [
-            global.publicPath + '/**/*.html',
+            global.publicPath + '/**/*.{html,php}',
             global.destPath + '/css/**/*.css',
             global.destPath + '/js/**/*.js'
         ]

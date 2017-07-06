@@ -5,6 +5,7 @@ const $ = require('gulp-load-plugins')();
 const browserSync = require('browser-sync');
 const requireDir = require('require-dir');
 const runSequence = require('run-sequence');
+const uglifysSaveLicense = require('uglify-save-license');
 const fs = require('fs');
 const path = require('path');
 const rootPath = __dirname;
@@ -36,5 +37,6 @@ module.exports = {
     requireDir         : requireDir,
     runSequence        : runSequence,
     fs                 : fs,
+    uglifysSaveLicense : uglifysSaveLicense,
     isWatching         : false
 };

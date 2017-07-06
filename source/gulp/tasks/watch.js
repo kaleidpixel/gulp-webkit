@@ -9,4 +9,7 @@ global.gulp.task('watch', function () {
     global.$.watch([global.srcPath + '/scss/**/*.scss'], function () {
         return global.gulp.start(['watch:scss']);
     });
+    global.$.watch([global.srcPath + '/js/**/*.js', global.srcPath + '/js/_order.json'], function () {
+        return global.gulp.start(['watch:javascript']);
+    });
 });
