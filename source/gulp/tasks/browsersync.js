@@ -14,7 +14,8 @@ global.gulp.task('browserSync', function () {
         files: [
             global.publicPath + '/**/*.{html,php}',
             global.destPath + '/css/**/*.css',
-            global.destPath + '/js/**/*.js'
+            global.destPath + '/js/**/*.js',
+            global.destPath + '/img/**/*.{jpg,jpeg,png,gif,svg}'
         ]
     });
 });
