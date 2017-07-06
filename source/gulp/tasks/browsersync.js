@@ -13,8 +13,8 @@ global.gulp.task('browserSync', function () {
         },
         files: [
             global.publicPath + '/**/*.html',
-            global.destPath + '/css/**/*.min.css',
-            global.destPath + '/js/**/*.min.js'
+            global.destPath + '/css/**/*.css',
+            global.destPath + '/js/**/*.js'
         ]
     });
 });
