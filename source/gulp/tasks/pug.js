@@ -5,7 +5,9 @@ const global = require('../global.js');
 global.gulp.task('pug', function () {
     return global.gulp.src([global.srcPath + '/pug/**/*.pug', global.srcPath + '/pug/_variables.json'])
         .pipe(global.$.plumber())
-        //.pipe(global.$.if(global.isWatching, global.$.changed(global.publicPath, {extension: '.html'})))
+        //.pipe(global.$.if(global.isWatching, global.$.changed(global.publicPath, {
+        //    extension: '.html'
+        // })))
         //.pipe(global.$.if(global.isWatching, global.$.cached('pug')))
         .pipe(global.$.pugInheritance({
             basedir: global.srcPath + '/pug',
@@ -20,10 +22,7 @@ global.gulp.task('pug', function () {
         .pipe(global.$.pug({
             pretty: true
         }))
-        .pipe(global.gulp.dest(global.publicPath))
-        .pipe(global.$.if(global.isWatching, global.browserSync.reload({
-            stream: true
-        })));
+        .pipe(global.gulp.dest(global.publicPath));
 });
 
 global.gulp.task('watchMode:pug', function () {

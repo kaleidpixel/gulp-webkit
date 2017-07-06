@@ -3,13 +3,18 @@
 const global = require('../global.js');
 
 global.gulp.task('browserSync', function () {
-    return global.browserSync.init(null, {
+    return global.browserSync({
         notify: false,
         open  : 'external',
         //proxy : global.proxyURI,
-        //https : global.proxySSL
+        //https : global.proxySSL,
         server: {
             baseDir: global.publicPath
-        }
+        },
+        files: [
+            global.publicPath + '/**/*.html',
+            global.destPath + '/css/**/*.min.css',
+            global.destPath + '/js/**/*.min.js'
+        ]
     });
 });
