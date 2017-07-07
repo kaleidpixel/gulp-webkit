@@ -14,11 +14,10 @@
   },
   "homepage": "https://github.com/kaleidpixel/gulp-webkit#readme",
   "scripts": {
-    "bw": "./node_modules/.bin/bower",
-    "gl": "./node_modules/.bin/gulp",
-    "ist": "npm install --save-dev",
-    "uist": "npm uninstall --save-dev",
-    "up": "./node_modules/.bin/ncu -u && npm install",
+    "gulp": "./node_modules/.bin/gulp",
+    "inst": "npm install --save-dev",
+    "uinst": "npm uninstall --save-dev",
+    "updt": "./node_modules/.bin/ncu -u && npm install",
     "ls": "npm ls --depth=0"
   },
   "devDependencies": {
