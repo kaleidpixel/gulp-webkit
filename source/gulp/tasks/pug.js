@@ -17,7 +17,7 @@ global.gulp.task('pug', function () {
             return !/\/_/.test(file.path) && !/^_/.test(file.relative);
         }))
         .pipe(global.$.data(function () {
-            return JSON.parse(global.fs.readFileSync(global.srcPath + '/pug/_variables.json'))
+            return JSON.parse(global.fs.readFileSync(global.srcPath + '/pug/_settings.json'))
         }))
         .pipe(global.$.pug({
             pretty: true
