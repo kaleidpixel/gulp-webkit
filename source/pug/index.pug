@@ -1,8 +1,9 @@
 extends _layout.pug
 
-block vars
-    - var key = "index"
-    - var root = "./"
+prepend vars
+    - var key = 'index'
+    - var pageUri = '/'
 
 block contents
-    h1=pages[key].title
+    h1=siteName
+    p: a(href=siteUrl)

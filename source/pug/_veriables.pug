@@ -1,0 +1,62 @@
+if pageUri
+    - var pageURL = siteUrl + pageUri
+else
+    - var pageURL = siteUrl
+
+if pages[key].delimiter
+    - delimiter = pages[key].delimiter
+
+if pages[key].advertisingSlogan
+    - advertisingSlogan = pages[key].advertisingSlogan
+
+if pages[key].ogType
+    - ogType = pages[key].ogType
+
+if pages[key].title
+    - var title = pages[key].title + delimiter + advertisingSlogan
+else
+    - var title = siteName + delimiter + advertisingSlogan
+
+if pages[key].ogTitle
+    - var ogTitle = pages[key].ogTitle
+else
+    - var ogTitle = title
+
+if pages[key].description
+    - var description = pages[key].description
+else
+    - var description = ''
+
+if pages[key].ogDescription
+    - var ogDescription = pages[key].ogDescription
+else
+    - var ogDescription = description
+
+if pages[key].twitterDescription
+    - var twitterDescription = pages[key].twitterDescription
+else
+    - var twitterDescription = ogDescription
+
+if pages[key].ogImage
+    - ogImage = pages[key].ogImage
+
+if pages[key].ogImageWidth
+    - ogImageWidth = pages[key].ogImageWidth
+
+if pages[key].ogImageHeight
+    - ogImageHeight = pages[key].ogImageHeight
+
+if pages[key].fbAppID
+    - fbAppID = pages[key].fbAppID
+
+if pages[key].fbPages
+    - fbPages = pages[key].fbPages
+
+if pages[key].twitterCard
+    - twitterCard = pages[key].twitterCard
+
+if pages[key].twitterSite
+    - twitterSite = pages[key].twitterSite
+
+if pages[key].twitterCreator
+    - twitterCreator = pages[key].twitterCreator
