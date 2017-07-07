@@ -6,8 +6,8 @@ global.gulp.task('browserSync', function () {
     return global.browserSync({
         notify: false,
         open  : 'external',
-        //proxy : global.proxyURI,
-        //https : global.proxySSL,
+        proxy : global.proxyURI,
+        https : global.proxySSL,
         server: {
             baseDir: global.publicPath
         },

@@ -1,7 +1,9 @@
-if pageUri
+if siteUrl && pageUri
     - var pageURL = siteUrl + pageUri
-else
+else if siteUrl
     - var pageURL = siteUrl
+else
+    - var pageURL = ''
 
 if pages[key].delimiter
     - delimiter = pages[key].delimiter

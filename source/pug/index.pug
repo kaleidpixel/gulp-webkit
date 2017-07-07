@@ -2,8 +2,8 @@ extends _layout.pug
 
 prepend vars
     - var key = 'index'
-    - var pageUri = '/'
+    - var rootPath = './'
 
 block contents
     h1=siteName
-    p: a(href=siteUrl)
+    p: a(href=siteUrl) test

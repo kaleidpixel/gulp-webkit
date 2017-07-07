@@ -1,6 +1,6 @@
 {
     "siteName": "Example Site",
-    "siteUrl": "https://www.example.com",
+    "siteUrl": "",
     "advertisingSlogan": "This is a example site",
     "delimiter": " | ",
     "locale": "ja",
@@ -23,9 +23,9 @@
         }
     },
     "assets": {
-        "css": "/assets/css",
-        "font": "/assets/css/font",
-        "img": "/assets/img",
-        "js": "/assets/js"
+        "css": "assets/css",
+        "font": "assets/css/font",
+        "img": "assets/img",
+        "js": "assets/js"
     }
 }
