@@ -1,0 +1,31 @@
+{
+    "siteName": "Example Site",
+    "siteUrl": "https://www.example.com",
+    "advertisingSlogan": "This is a example site",
+    "delimiter": " | ",
+    "locale": "ja",
+    "ogLocal": "ja_JP",
+    "ogType": "website",
+    "ogImage": "",
+    "ogImageWidth": "",
+    "ogImageHeight": "",
+    "fbAppID": "",
+    "fbPages": "",
+    "twitterCard": "summary_large_image",
+    "twitterSite": "",
+    "twitterCreator": "",
+    "pages": {
+        "index": {
+            "url": "/",
+            "description": "A 'Hello, World!' program is a computer program that outputs or displays 'Hello, World!' to a user.",
+            "ogDescription": "A 'Hello, World!' program is a computer program that outputs or displays 'Hello, World!' to a user.",
+            "twitterDescription": "A 'Hello, World!' program is a computer program that outputs or displays 'Hello, World!' to a user."
+        }
+    },
+    "assets": {
+        "css": "/assets/css",
+        "font": "/assets/css/font",
+        "img": "/assets/img",
+        "js": "/assets/js"
+    }
+}
