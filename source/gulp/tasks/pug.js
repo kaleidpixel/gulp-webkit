@@ -17,7 +17,11 @@ global.gulp.task('pug', function () {
             return !/\/_/.test(file.path) && !/^_/.test(file.relative);
         }))
         .pipe(global.$.data(function () {
-            return JSON.parse(global.fs.readFileSync(global.srcPath + '/pug/_settings.json'))
+            const json = JSON.parse(global.fs.readFileSync(global.srcPath + '/pug/_settings.json'));
+            json.siteURL = global.proxyURI;
+            json.assetsDirName = global.destDirName;
+
+            return json;
         }))
         .pipe(global.$.pug({
             pretty: true

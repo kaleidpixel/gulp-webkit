@@ -3,9 +3,7 @@
 const global = require('../global.js');
 
 global.gulp.task('javascript', function () {
-    const order = JSON.parse(global.fs.readFileSync(global.srcPath + '/js/_order.json'));
-
-    return global.gulp.src(order)
+    return global.gulp.src([global.srcPath + '/js/**/*.js', global.srcPath + '/js/_order.json'])
         .pipe(global.$.plumber())
         .pipe(global.$.order(JSON.parse(global.fs.readFileSync(global.srcPath + '/js/_order.json')), {
             base: global.publicPath

@@ -1,6 +1,5 @@
 {
     "siteName": "Example Site",
-    "siteUrl": "",
     "advertisingSlogan": "This is a example site",
     "delimiter": " | ",
     "locale": "ja",
@@ -22,10 +21,10 @@
             "twitterDescription": "A 'Hello, World!' program is a computer program that outputs or displays 'Hello, World!' to a user."
         }
     },
-    "assets": {
-        "css": "assets/css",
-        "font": "assets/css/font",
-        "img": "assets/img",
-        "js": "assets/js"
+    "paths": {
+        "css": "/css",
+        "font": "/css/font",
+        "img": "/img",
+        "js": "/js"
     }
 }

@@ -1,9 +1,10 @@
-if siteUrl && pageUri
-    - var pageURL = siteUrl + pageUri
-else if siteUrl
-    - var pageURL = siteUrl
+if !siteURL
+    - siteURL = rootPath
+
+if siteURL && pageUri
+    - var pageURL = siteURL + pageUri
 else
-    - var pageURL = ''
+    - var pageURL = siteURL
 
 if pages[key].delimiter
     - delimiter = pages[key].delimiter

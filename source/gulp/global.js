@@ -13,10 +13,15 @@ const tasksPath = rootPath + '/tasks';
 const publicPath = path.resolve(rootPath + '/../../');
 const publicDirName = publicPath.replace(/((.*?)\/)*/, '');
 const wpPath = rootPath.replace('/wp-content/themes/' + publicDirName + '/source/gulp', '');
-const proxyURI = false;
-const proxySSL = false;
-const srcPath = publicPath + '/source';
-const destPath = publicPath + '/assets';
+const bsProxyURI = false;
+const bsHttpSSL = false;
+const bsHttpModule = false;
+const bsOpen = 'local'; // or external or ui or ui-external
+const bsBrowser = ["google chrome", "firefox"]; // String or Array
+const srcDirName = 'source';
+const destDirName = 'assets';
+const srcPath = publicPath + '/' + srcDirName;
+const destPath = publicPath + '/' + destDirName;
 const bowerComponentsPath = publicPath + '/bower_components';
 const nodeModulesPath = publicPath + '/node_modules';
 
@@ -25,8 +30,13 @@ module.exports = {
     tasksPath          : tasksPath,
     publicPath         : publicPath,
     wpPath             : wpPath,
-    proxyURI           : proxyURI,
-    proxySSL           : proxySSL,
+    bsProxyURI         : bsProxyURI,
+    bsHttpSSL          : bsHttpSSL,
+    bsHttpModule       : bsHttpModule,
+    bsOpen             : bsOpen,
+    bsBrowser          : bsBrowser,
+    srcDirName         : srcDirName,
+    destDirName        : destDirName,
     srcPath            : srcPath,
     destPath           : destPath,
     bowerComponentsPath: bowerComponentsPath,
